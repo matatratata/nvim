@@ -22,8 +22,8 @@ if exists('g:vscode')
 else
 
   " Better nav for omnicomplete
-  inoremap <expr> <c-j> ("\<C-n>")
-  inoremap <expr> <c-k> ("\<C-p>")
+  " inoremap <expr> <c-j> ("\<C-n")
+  " inoremap <expr> <c-k> ("\<C-p>")
 
   " I hate escape more than anything else
   inoremap jk <Esc>
@@ -32,6 +32,7 @@ else
   " Easy CAPS
   " inoremap <c-u> <ESC>viwUi
   " nnoremap <c-u> viwU<Esc>
+
 
   " TAB in general mode will move to text buffer
   nnoremap <silent> <TAB> :bnext<CR>
@@ -93,5 +94,5 @@ else
 endif
 
 " Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+" inoremap <expr> <c-j> ("\<C-n>")
+" inoremap <expr> <c-k> ("\<C-p>")

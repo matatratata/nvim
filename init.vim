@@ -13,6 +13,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/plugins/cyclist.vim/cyclist.vim
 
 if exists('g:vscode')
   " VS Code extension
@@ -64,6 +65,12 @@ else
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
+function! s:local_plug(package_name) abort " {{{
+  execute "Plug '~/plugins/".a:package_name."'"
+  "}}}
+endfunction
+
+call s:local_plug("cyclist.vim")
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))
   source $HOME/.config/nvim/paths.vim
@@ -72,3 +79,4 @@ endif
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+

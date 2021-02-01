@@ -43,7 +43,8 @@
     "yaml",
     "json",
     "python",
-    "java"
+    "java",
+    "dart"
   ],
   "coc.preferences.hoverTarget": "float",
 
@@ -113,8 +114,6 @@
       "trace.server": "verbose"
     }
   },
-
-  "bookmark.sign": "",
 
   //coc-emoji
   "coc.source.emoji.filetypes": ["markdown"]
